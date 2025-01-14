@@ -4,44 +4,125 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Steve</title>
-  
-  <style>
-    body {
-      justify-content: center;
-      margin: 0px;
-      background-color: #000000;
-      color: #FFFFFF;
-      text-align: center;
-      font-family: 'CONSOLAS', monospace;
-    }
-    
-    header {
-      margin: 15px;
-      padding: 180px;
-      background-color:;
-      color: white;
-      text-align: center;
-      font-family: 'CONSOLAS', monospace;
-      font-weight: 20;
-    }
-    main {
-      padding: 50px;
-    }
-  </style>
+
+  <title>ES8 Project</title>
+<style>
+  body {
+    background-color: black;
+    font-family: 'CONSOLAS', monospace;
+    color: white;
+    text-align: center;
+    padding: 76px;
+  }
+  .vermelho {
+    color: black;
+    background-color: #C00606;
+    font-weight: bold;
+    padding: 2px;
+  }
+  .cor {
+    color: #D00000;
+  }
+  .bran {
+    background-color: #8B8B8B;
+    color: black;
+    font-weight: bold;
+  }
+  header {
+    display: ; justify-content: center; 
+  }
+  .post {
+    background-color: #202020;
+    color: #999999;
+    padding: 0px;
+    text-align: left;
+  }
+  .insta {
+    color: white;
+    background-color: #FF00BE;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 5px;
+  }
+  .disc {
+    color: white;
+background-color: #2946D0;
+border-radius: 6px;
+text-decoration: none;
+padding: 5px;
+  }
+  .Live {
+    color: white;
+background-color: #2946D0;
+border-radius: 6px;
+text-decoration: none;
+padding: 5px;
+  }
+</style>
 </head>
 <body>
   <header>
+    <h2 class="cor">ATENÇÃO</h2>
+<p>O proprietário destes conteúdos (REPOSADO) não se responsabiliza por sustos, gatilhos, sentimentos de medo, desconforto ou que seja semelhante!<br><mark class="bran">VOCÊ ESTÁ NAVEGANDO POR SUA PRÓPRIA CONTA E RISCO!</mark><br>
+</p>
+<img src="imagens/mao.jpg" alt="mão" width="280px">
+<p>
+  Você foi devidamente avisado(a), tome cuidado.<br>
+  <br><mark class="vermelho">+16</mark>
+</p>
   </header>
   <main>
-    <h3>links caso você queira me seguir ou falar comigo</h3>
-    <a href="https://www.instagram.com/reposadohtml/">Instagram</a>
-    <p>ainda não tenho Discord.</p>
-    <p>quer me dar seu dinheirinho suado?</p>
-    <a href="https://livepix.gg/reposadotiktok">livepix</a>
+    <article class="post">
+      Olá, eu vou deixar alguns links para você acessar; incluindo meu servidor no Discord mas já adianto que o bate papo pode estar desativado.<br>
+      Eu não tolero muito menos aceito tópicos abordados principalmente sem responsabilidade, é um grupo para você conversar somente sobre os vídeos postados; "DESABAFAR PODE?" não. Não há nenhum profissional da área no grupo então não, não recomendo que você se abra para um estranho na internet de maneira alguma!<br>
+      Nem tudo que reluz é ouro e nem toda ovelha é realmente uma ovelha, então tome cuidado!<br>
+      <br>
+      <mark class="bran">SEJA CIVILIZADO, VOCÊ É UM SER HUMANO E NÃO UM MACACO</mark>
+            <br><br>
+      <mark class="bran">SEJA CIVILIZADO, VOCÊ É UM SER HUMANO E NÃO UM MACACO</mark>
+            <br><br>
+      <mark class="bran">SEJA CIVILIZADO, VOCÊ É UM SER HUMANO E NÃO UM MACACO</mark>
+            <br><br>
+      <mark class="bran">SEJA CIVILIZADO, VOCÊ É UM SER HUMANO E NÃO UM MACACO</mark>
+            <br><br>
+      <mark class="bran">SEJA CIVILIZADO, VOCÊ É UM SER HUMANO E NÃO UM MACACO</mark>
+            <br><br>
+      <mark class="bran">SEJA CIVILIZADO, VOCÊ É UM SER HUMANO E NÃO UM MACACO</mark>
+    </article>
+    <br>
+    <a class="insta" href="https://www.instagram.com/reposadohtml?igsh=MWV5aGh4anpiZDdmbQ==">Instagram</a>
+    <a class="disc" href="https://discord.gg/D2jqhzFU">Discord</a>
+    <br>
+    <br>
+    <article class="post">
+      Meus vídeos não são monetizados :(<br>
+      Se você quiser apoiar os vídeos financeiramente este é o link, sua mensagem será mostrada nos vídeos de forma oculta; como uma mensagem de uma alma perdida. //seu nome também xD//
+    </article><br>
+    <a class="Live" href="https://livepix.gg/reposadotiktok">Livepix</a>
   </main>
   <footer>
     
   </footer>
+  <script>
+  
+  const colors = ['limegreen', 'green', 'limegreen', 'green', 'limegreen'];
+  let currentColorIndex = 0;
+
+  
+  function changeColor() {
+    
+    const liveElement = document.querySelector('.Live');
+    
+    
+    liveElement.style.backgroundColor = colors[currentColorIndex];
+    
+    
+    currentColorIndex = (currentColorIndex + 1) % colors.length;
+  }
+
+ 
+  setInterval(changeColor, 100);
+</script>
+
 </body>
 </html>
